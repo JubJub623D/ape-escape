@@ -16,10 +16,10 @@ In addition, a vast portion of the result consists of nothing but 00's, meaning 
 
 In the event that I manage to better understand the inner workings of +R and its replay files, I'll surely see progress on these roadblocks.
 
-**Model Structure**
+**Model Structure:**
 As of now, the model utilizes a 1D convolutional net on top of a GRU recurrent network to process the data efficiently without sacrificing too much accuracy. Since the sequences are thousands of bytes in length, the convolutional net is used to condense the data down to a size that's managable for a RNN.
 
-**Model Performance**
+**Model Performance:**
 As of now, the model still performs very imprecisely, with a high variance of error. This could be for a number of reasons:
 * Poor understanding of the structure of .ggr files
 * Insufficient data
